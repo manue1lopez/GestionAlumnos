@@ -1,0 +1,59 @@
+<!---Vista Primera del tutor-->
+<div class="container-fluid container-fullw">
+	<div class="row">
+		<div class="col-md-12">
+			<h5 class="over-title margin-bottom-15"><span class="text-bold"><?php foreach($usuario as $nombre){ echo $nombre["usuario"];}?></span></h5>
+			<p>
+
+			</p>
+			<table class="table table-striped table-hover" id="sample-table-2">
+				<thead>
+				<tr>
+					<th class="center">id</th>
+					<th>Nombre</th>
+					<th class="">Apellidos</th>
+					<th class="">Curso</th>
+					<th></th>
+				</tr>
+				</thead>
+				<tbody>
+					<?php foreach($alumno as $dato){?>
+				<tr>
+					<td class=""><?php echo $dato["id"]?></td>
+					<td class=""><?php echo $dato["nombre"]?></td>
+					<td class=""><?php echo $dato["apellidos"]?></td>
+					<td class=""><?php echo $dato["curso_id"]?>º</td>
+					<td class="center">
+						<div class="visible-md visible-lg hidden-sm hidden-xs">
+							<a href="#" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
+							<a href="#" class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Share"><i class="fa fa-share"></i></a>
+							<a href="#" class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
+						</div>
+						<div class="visible-xs visible-sm hidden-md hidden-lg">
+							<div class="btn-group" dropdown>
+								<button type="button" class="btn btn-primary btn-sm dropdown-toggle" dropdown-toggle>
+									<i class="fa fa-cog"></i>&nbsp;<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu pull-right dropdown-light" role="menu">
+									<li>
+										<a href="#">
+											Edit
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Share
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Remove
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div></td>
+				</tr>
+			<?php }?>
+			</tbody>
+			</table>
