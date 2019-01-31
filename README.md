@@ -1,6 +1,3 @@
 # GestionAlumnos
 
-
-soy manu
-
-soy dani
+App realizada durante trabajo en grupo mientras cursaba DAM
